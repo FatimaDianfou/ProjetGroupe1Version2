@@ -1,23 +1,40 @@
 /* Sidebar */
+
+
+
 .sidebar {
-  background-color: #2980B9; /* Même bleu que la navbar */
+  background-color: var( --primary-color-1); /* Même bleu que la navbar */
   color: white; /* Texte en blanc */
-  width: 250px;
-  height: 100vh; /* Prendre toute la hauteur */
-  position: fixed; /* Fixer la sidebar */
-  top: 0;
-  left: 0;
+  height: 100%;
+  min-height: 100vh;
   padding-top: 20px;
+  text-align: center;
 }
 
+img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+
+hr {
+  margin: 30px 0px;
+}
 .sidebar .nav-item {
-  padding: 15px 20px;
+  padding: 5px 20px;
+  width: 100%;
 }
 
 .sidebar .nav-item a {
   color: white; /* Couleur des liens en blanc */
   text-decoration: none;
   font-size: 18px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+
 }
 
 .sidebar .nav-item a:hover {

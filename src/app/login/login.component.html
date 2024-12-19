@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="background-image: url('assets/img/register.png');">
   <div class="card shadow p-4">
     <h2 class="text-center mb-4">Se connecter</h2>
     <form (ngSubmit)="login()" #loginForm="ngForm">
@@ -10,9 +10,11 @@
         <label for="password" class="form-label">Mot de passe</label>
         <input type="password" id="password" name="password" [(ngModel)]="password" class="form-control" required />
       </div>
-      <button type="submit" class="btn btn-primary w-100" [disabled]="loginForm.invalid" routerLink="/home">Connexion</button>
+      <button type="submit" class="btn btn-primary w-100" [disabled]="loginForm.invalid"
+        routerLink="/home">Connexion</button>
     </form>
-    <p class="text-center mt-3">Pas encore de compte ? <a routerLink="/register" class="text-primary">Créer un compte</a></p>
+    <p class="text-center mt-3">Pas encore de compte ? <a routerLink="/register" class="text-primary">Créer un
+        compte</a></p>
     <div *ngIf="errorMessage" class="text-danger">{{ errorMessage }}</div>
     <div *ngIf="successMessage" class="text-success">{{ successMessage }}</div>
   </div>
