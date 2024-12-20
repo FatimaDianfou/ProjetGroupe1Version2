@@ -1,14 +1,14 @@
 <div class="sub-main-content">
 
-  <div class="my-app-sidebar">
-    <app-sidebar *ngIf="!isLoginPage && !isRegisterPage"></app-sidebar>
+  <div *ngIf="!isLoginPage && !isRegisterPage" class="my-app-sidebar">
+    <app-sidebar></app-sidebar>
   </div>
 
   <!-- Main Content -->
   <div class="main-content">
-    <div class="app-nav-bar">
+    <div *ngIf="!isLoginPage && !isRegisterPage" class="app-nav-bar">
       <!-- Masquer la navbar si sur la page login ou register -->
-      <app-navbar *ngIf="!isLoginPage && !isRegisterPage"></app-navbar>
+      <app-navbar></app-navbar>
     </div>
 
     <!-- Page Content -->

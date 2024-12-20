@@ -4,7 +4,7 @@
   
   .banner {
     text-align: center;
-    background-color: #509CDB;
+    background-color: var(--primary-color-1);
     color: white;
     padding: 20px;
     margin-bottom: 20px;
@@ -29,15 +29,28 @@
   }
   
   .announcement-card {
-    background-color: #e8f5e9;
+    background-color: white;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
+    /* box-shadow:
+  0.3px 0.4px 0.5px -15px rgba(0, 0, 0, 0.021),
+  0.8px 1px 1.1px -15px rgba(0, 0, 0, 0.03),
+  1.5px 1.7px 1.9px -15px rgba(0, 0, 0, 0.037),
+  2.4px 2.9px 3.2px -15px rgba(0, 0, 0, 0.043),
+  4px 4.8px 5.3px -15px rgba(0, 0, 0, 0.05),
+  6.9px 8.3px 9.2px -15px rgba(0, 0, 0, 0.059),
+  15px 18px 20px -15px rgba(0, 0, 0, 0.08)
+; */
   }
   
   .links {
     display: flex;
     justify-content: space-around;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
   }
   
   .link-card {
@@ -53,3 +66,11 @@
     background-color: #333333;
   }
   
+  .my-card-item a {
+    text-decoration: none;
+  }
+  .my-card-item a:hover {
+    background-color: var(--primary-color-1);
+    color: white;
+
+  }

@@ -3,7 +3,6 @@ body {
   /*background-image: url('assets/img/logi.jpeg'); /* Replace with your image URL */
   background-size: cover;
   background-position: center;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,13 +10,23 @@ body {
 }
 
 /* Center the card and make the inputs smaller */
-.container {
-  max-width: 400px; /* Adjust the width to fit the design */
+.my-container {
   width: 100%;
-  padding: 20px;
+  /* padding: 20px; */
   background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.my-container .card {
+  width: 30%;
+  margin: auto;
 }
 
 /* Style the input fields */
@@ -66,3 +75,5 @@ body {
 .text-primary:hover {
   color: #0056b3;
 }
+
+
